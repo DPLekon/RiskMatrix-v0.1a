@@ -1,0 +1,66 @@
+.risk-matrix-container {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+select {
+  width: 100%;
+  max-width: 200px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.risk-matrix {
+  display: grid;
+  grid-template-columns: auto repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 1px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.risk-matrix-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.risk-matrix-header-cell {
+  font-weight: bold;
+  background-color: #f7f7f7;
+}
+
+.risk-matrix-row:nth-child(even) .risk-matrix-cell:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+.risk-matrix-row:nth-child(odd) .risk-matrix-cell:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+
+.risk-high {
+  background-color: red;
+  color: white;
+}
+
+.risk-medium {
+  background-color: yellow;
+}
+
+.risk-low {
+  background-color: green;
+}
